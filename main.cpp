@@ -33,7 +33,7 @@ int main() {
 		TM.print_tape();
 	}
 	catch(std::logic_error& e) {
-		//std::cout<<e.what();
+		std::cout<<e.what();
 	}
 	return 0;
 }

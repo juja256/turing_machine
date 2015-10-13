@@ -10,7 +10,7 @@ tape::tape(int size) {
 }
 
 tape::~tape() {
-	delete t;
+	delete[] t;
 }
 
 int tape::print_word(char* word) {

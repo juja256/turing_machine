@@ -28,9 +28,7 @@ int turing_machine::calculate(char** program, int program_len, char* argc) {
 		std::stringstream ss(std::string(program[i]));
 		while (ss>>c) 
 			lexems.push_back(strdup(c));
-		//for (int b=0 ;b<5;b++ ) std::cout << lexems[b];
-		if (lexems.size() != 5) {  throw std::logic_error("Syntax error 1!"); }
-		//std::cout<<cur<<atoi(lexems[0]);
+				if (lexems.size() != 5) {  throw std::logic_error("Syntax error 1!"); }
 		if (cur == atoi(lexems[0])) { // begin
 			char cur_symbol = h.read(&t);
 			
